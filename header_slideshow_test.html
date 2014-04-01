@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>jQuery Rotating Background Image</title>
+ 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+<script src="jquery.cycle.lite.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+ 
+$(document).ready(function(){
+ 
+    $('#bg_containers').cycle({
+		fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+	});
+ 
+});
+</script>
+ 
+<style type="text/css">
+ 
+body {padding:0; margin:0;}
+#content {position:relative;width:800px; height:600px; margin:0; z-index:999; padding:270px 0 0;}
+#text_box {background:#000; color:#ffffff; padding:10px; margin:0 auto; width:600px;}
+ 
+/* classes to work with cycle plugin for BG images */
+#bg_containers {width:800px; margin:0;}
+#bg_containers div {width:800px; height:600px; margin:0 auto;}
+#bg_containers .bg1 {background:url(Images/1.jpg) no-repeat;}
+#bg_containers .bg2 {background:url(Images/2.jpg) no-repeat;}
+#bg_containers .bg3 {background:url(Images/3.jpg) no-repeat;}
+</style>
+ 
+</head> 
+ 
+<body>
+ 
+<div id="bg_containers">
+	<div class="bg1"></div>
+	<div class="bg2"></div>
+	<div class="bg3"></div>
+</div>
+ 
+<div id="content"> 
+ 
+	<div id="text_box">
+    	        The background image behind this can be any size, so although it may not cover your entire screen in this case, you can make it cover as much or as little of the screen as you like. Just adjust the size of the #bg_containers, and of course, you can also have the background tile if you like as well.
+        </div>
+ 
+</div>
+ 
+</body>
+</html>
