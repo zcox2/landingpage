@@ -1,0 +1,43 @@
+html
+{
+
+}
+
+#lander
+{
+	height: 900px;
+	background-image: url("background.JPG");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: -10px;
+}
+
+#lander img
+{
+
+}
+
+.logo
+{
+ 	background: rgba(0,0,0,0);
+ 	width: 100%;
+ 	/*border-bottom: 4px solid gray;
+ 	border-right: 4px solid gray;*/
+ 	border-bottom-right-radius: 25px;
+}
+
+
+
+
+
+#banner
+{
+ 	width: 35%;
+ 	height: 900px;
+ 	background-color: rgba(255,255, 255, .7);
+ 	border-left: 2px solid gray;
+ 	position: absolute;
+ 	top: 0;
+ 	right: 0;
+
+}
